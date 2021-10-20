@@ -1,17 +1,11 @@
-#region conda initialize
-# !! Contents within this block are managed by 'conda init' !!
-(& "C:\Users\Rowan\mambaforge\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
-#endregion
+## conda
 conda deactivate
 
-# oh-my-posh
-oh-my-posh --init --shell pwsh --config ~/.rdmolony.omp.json | Invoke-Expression
-$env:POSH_GIT_ENABLED = $true
-Import-Module git-aliases -DisableNameChecking
-. $PSScriptRoot\conda-aliases.ps1
+## oh-my-posh
+Set-PoshPrompt -Theme .\.rdmolony.omp.json
 
-# clear startup screen
-Clear-Host 
+## aliases
+. .\conda-aliases.ps1
 
 # enable tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
