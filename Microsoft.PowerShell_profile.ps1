@@ -11,6 +11,9 @@ Import-Module posh-git
 . (Join-Path  $PSScriptRoot ".\conda-aliases.ps1")
 Import-Module git-aliases -DisableNameChecking
 
+## environmental variables
+$PROFILEDIR = $PSScriptRoot
+
 # enable tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
