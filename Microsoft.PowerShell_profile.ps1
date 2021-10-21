@@ -3,12 +3,12 @@ conda deactivate
 
 ## oh-my-posh
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme .\.rdmolony.omp.json
+Set-PoshPrompt -Theme (Join-Path  $PSScriptRoot "\.rdmolony.omp.json")
 $env:POSH_GIT_ENABLED = $true
 Import-Module posh-git
 
 ## aliases
-. .\conda-aliases.ps1
+. (Join-Path  $PSScriptRoot ".\conda-aliases.ps1")
 Import-Module git-aliases -DisableNameChecking
 
 # enable tab completion
