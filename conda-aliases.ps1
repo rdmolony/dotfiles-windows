@@ -7,6 +7,6 @@ function Activate-Conda {
 }
 Set-Alias -Name ca -Value Activate-Conda
 function Deactivate-Conda {
-    conda activate $EnvironmentName
+    conda deactivate $EnvironmentName
 }
 Set-Alias -Name cda -Value Deactivate-Conda
