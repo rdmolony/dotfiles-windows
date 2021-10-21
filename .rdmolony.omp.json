@@ -14,9 +14,9 @@
           "type": "path"
         },
         {
-          "foreground": "#C2C206",
+          "type": "poshgit",
           "style": "plain",
-          "type": "git"
+          "foreground": "#C2C206"
         },
         {
           "type": "python",
