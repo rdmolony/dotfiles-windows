@@ -21,3 +21,4 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 # Install-Module oh-my-posh -Scope CurrentUser
 # Install-Module git-aliases -Scope CurrentUser
 # Install-Module posh-git -Scope CurrentUser
+# Install-Module choco -Scope CurrentUser
